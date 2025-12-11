@@ -1,0 +1,51 @@
+.detailsPage {
+  padding: 20px;
+  color: white;
+  background-color: black;
+}
+
+.movieSection {
+  display: flex;
+  gap: 20px;
+}
+
+.moviePoster {
+  width: 300px;
+  border-radius: 10px;
+}
+
+.movieInfo {
+  max-width: 600px;
+}
+
+.castHeading {
+  margin-top: 40px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.castGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.castCard {
+  text-align: center;
+}
+
+.castImage {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.actorName {
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.characterName {
+  font-size: 14px;
+  opacity: 0.8;
+}

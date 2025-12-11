@@ -1,0 +1,77 @@
+.up-page {
+  padding: 20px;
+  background-color: #0d0d0d;
+  min-height: 100vh;
+}
+
+.up-head {
+  font-size: 32px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #f5c518;
+}
+
+/* Grid layout */
+.upMovieGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 25px;
+  padding: 10px;
+}
+
+/* Movie Card */
+.upMovieCard {
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  transition: 0.3s ease-in-out;
+  border: 1px solid #333;
+}
+
+.upMovieCard:hover {
+  transform: scale(1.05);
+  border-color: #f5c518;
+}
+
+/* Poster Image */
+.upMovieimage {
+  width: 100%;
+  border-radius: 10px;
+  height: 320px;
+  object-fit: cover;
+}
+
+/* Movie Title */
+.upmovieName {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #ffffff;
+}
+
+/* Rating */
+.uprating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin: 10px 0;
+  color: #f5c518;
+  font-weight: bold;
+}
+
+/* View Details Button */
+.upMovieCard button {
+  padding: 8px 14px;
+  background-color: #f5c518;
+  color: black;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.upMovieCard button:hover {
+  background-color: #d4a90c;
+}
