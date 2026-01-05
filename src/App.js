@@ -1,29 +1,21 @@
-import './App.css'
-import {Component} from 'react'
-import {Routes, Route} from 'react-router-dom'
-import Navbar from './component/Navbar'
-import Popular from './component/Popular'
-import TopRated from './component/TopRated'
-import Upcoming from './component/Upcoming'
-import UpcomingMovieDetails from './component/UpcomingMovieDetails'
-import SearchMovie from './component/SearchMovie'
+import {Switch, Route} from 'react-router-dom'
 
-// write your code here
-class App extends Component {
-  render() {
-    return (
-      <>
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Popular />} />
-          <Route path="/top-rated" element={<TopRated />} />
-          <Route path="/upcoming" element={<Upcoming />} />
-          <Route path="/movie/:id" element={<UpcomingMovieDetails />} />
-          <Route path="/search" element={<SearchMovie />} />
-        </Routes>
-      </>
-    )
-  }
-}
+import Navbar from './components/Navbar'
+import Popular from './components/Popular'
+import TopRated from './components/TopRated'
+import Upcoming from './components/Upcoming'
+import SearchMovie from './components/SearchMovie'
+
+const App = () => (
+  <>
+    <Navbar />
+    <Switch>
+      <Route exact path="/" component={Popular} />
+      <Route exact path="/top-rated" component={TopRated} />
+      <Route exact path="/upcoming" component={Upcoming} />
+      <Route exact path="/search" component={SearchMovie} />
+    </Switch>
+  </>
+)
 
 export default App

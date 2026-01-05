@@ -1,67 +1,70 @@
-.up-page {
+/* Page container */
+.toprated-page {
   padding: 20px;
   background-color: #0d0d0d;
   min-height: 100vh;
 }
 
-.up-head {
+/* Heading */
+.top-head {
   font-size: 32px;
   margin-bottom: 20px;
   text-align: center;
   color: #f5c518;
 }
 
-/* Grid layout */
-.upMovieGrid {
+/* Grid layout for movies */
+.topMovieGrid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   gap: 25px;
   padding: 10px;
 }
 
-/* Movie Card */
-.upMovieCard {
+/* Movie card */
+.topMovieCard {
   background-color: #1a1a1a;
   border-radius: 10px;
   padding: 10px;
   text-align: center;
-  transition: 0.3s ease-in-out;
   border: 1px solid #333;
+  transition: 0.3s ease-in-out;
 }
 
-.upMovieCard:hover {
+.topMovieCard:hover {
   transform: scale(1.05);
   border-color: #f5c518;
 }
 
 /* Poster Image */
-.upMovieimage {
+.topMovieimage {
   width: 100%;
   border-radius: 10px;
   height: 320px;
   object-fit: cover;
+  margin-bottom: 10px;
 }
 
-/* Movie Title */
-.upmovieName {
+/* Movie title */
+.movieName {
   font-size: 18px;
   margin: 10px 0;
   color: #ffffff;
 }
 
 /* Rating */
-.uprating {
+.rating {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 6px;
-  margin: 10px 0;
   color: #f5c518;
   font-weight: bold;
+  margin-bottom: 10px;
 }
 
-/* View Details Button */
-.upMovieCard button {
+/* View Details button */
+.topMovieCard button {
   padding: 8px 14px;
   background-color: #f5c518;
   color: black;
@@ -72,6 +75,34 @@
   transition: 0.3s;
 }
 
-.upMovieCard button:hover {
+.topMovieCard button:hover {
   background-color: #d4a90c;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.pagination button {
+  padding: 8px 16px;
+  border: none;
+  background-color: #0b69ff;
+  color: #ffffff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.pagination button:disabled {
+  background-color: #cbd5e1;
+  cursor: not-allowed;
+}
+
+.page-number {
+  font-size: 18px;
+  font-weight: 600;
 }

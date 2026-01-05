@@ -1,10 +1,11 @@
-.toprated-page {
+.up-page {
   padding: 20px;
   background-color: #0d0d0d;
   min-height: 100vh;
 }
 
-.top-head {
+/* Heading */
+.up-head {
   font-size: 32px;
   margin-bottom: 20px;
   text-align: center;
@@ -12,7 +13,7 @@
 }
 
 /* Grid layout */
-.topMovieGrid {
+.upMovieGrid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   gap: 25px;
@@ -20,7 +21,7 @@
 }
 
 /* Movie Card */
-.topMovieCard {
+.upMovieCard {
   background-color: #1a1a1a;
   border-radius: 10px;
   padding: 10px;
@@ -29,13 +30,13 @@
   border: 1px solid #333;
 }
 
-.topMovieCard:hover {
+.upMovieCard:hover {
   transform: scale(1.05);
   border-color: #f5c518;
 }
 
 /* Poster Image */
-.topMovieimage {
+.upMovieimage {
   width: 100%;
   border-radius: 10px;
   height: 320px;
@@ -43,14 +44,14 @@
 }
 
 /* Movie Title */
-.movieName {
+.upmovieName {
   font-size: 18px;
   margin: 10px 0;
   color: #ffffff;
 }
 
 /* Rating */
-.rating {
+.uprating {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -61,7 +62,7 @@
 }
 
 /* View Details Button */
-.topMovieCard button {
+.upMovieCard button {
   padding: 8px 14px;
   background-color: #f5c518;
   color: black;
@@ -72,6 +73,34 @@
   transition: 0.3s;
 }
 
-.topMovieCard button:hover {
+.upMovieCard button:hover {
   background-color: #d4a90c;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.pagination button {
+  padding: 8px 16px;
+  border: none;
+  background-color: #0b69ff;
+  color: #ffffff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.pagination button:disabled {
+  background-color: #cbd5e1;
+  cursor: not-allowed;
+}
+
+.page-number {
+  font-size: 18px;
+  font-weight: 600;
 }
